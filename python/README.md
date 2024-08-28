@@ -1,6 +1,6 @@
 # SpO2 Watch Python SDK
 
-The adi-spo2-watch provides an object-oriented interface for interacting with ADI's VSM study watch 4.5 platform (SpO2 Watch).
+The adi-spo2-watch provides an object-oriented interface for interacting with ADI's VSM Study Watch 4.5 platform (SpO2 Watch).
 
 **Installation**
 
@@ -17,7 +17,7 @@ interact with that application. A brief guide on using the SDK and few examples 
 
 **Firmware Setup**
 
-https://github.com/analogdevicesinc/spo2-watch-sdk/blob/main/firmware/SpO2_Watch_Firmware_Upgrade.pdf
+https://github.com/analogdevicesinc/spo2-watch-sdk/blob/main/firmware/Firmware_update_guide.pdf
 
 **Getting started with SDK**
 
@@ -33,51 +33,48 @@ The application objects can be instantiated from the sdk object. In order to ins
 have to pass a call-back function as an input argument which can be used to retrieve the data from the application
 object. Define a callback function as displayed below.
 ```python
-def adxl_cb(data):
+def callback_data(data):
     print(data)
 ```
 Once the call-back function is defined, you can instantiate the application object as shown below.
 ```python
-adxl_app = sdk.get_adxl_application()
-adxl_app.set_callback(adxl_cb)
+application = sdk.get_sensorhub_application()
+application.set_callback(callback_data, stream=application.SH_ADXL_STREAM)
 ```
-Each application object has various methods that can be called by referring to the application. An example of retrieving
-the sensor status is shown below. Almost all method in an application returns result in a dict.
+Each application object has various methods that can be called by referring to the application. Almost all method in 
+an application returns result in a dict.
 
-```python
-packet = adxl_app.get_sensor_status() # returns dict
-print(packet)
-```
 
 **Basic Example:**
 
 ```python
 import time
 from datetime import datetime
-from adi_study_watch import SDK
+from adi_spo2_watch import SDK
 
-# callback function to receive adxl data
+# Callback function to receive adxl data
 def callback_data(data):
     sequence_number = data["payload"]["sequence_number"]
     for stream_data in data["payload"]["stream_data"]:
         dt_object = datetime.fromtimestamp(stream_data['timestamp'] / 1000)  # convert timestamp from ms to sec.
         print(f"seq :{sequence_number} timestamp: {dt_object} x,y,z :: ({stream_data['x']}, "
-              f"{stream_data['y']}, {stream_data['z']})")
+                f"{stream_data['y']}, {stream_data['z']})")
 
 
 if __name__ == "__main__":
     sdk = SDK("COM4")
-    application = sdk.get_adxl_application()
-    application.set_callback(callback_data)
+    application = sdk.get_sensorhub_application()
 
-    # quickstart adxl stream
+    # Quickstart adxl stream
+    application.set_callback(callback_data, stream=application.SH_ADXL_STREAM)
+    application.enable_csv_logging("adxl.csv", stream=application.SH_ADXL_STREAM) # Logging adxl data to csv file
+    application.subscribe_stream(stream=application.SH_ADXL_STREAM)
+    application.set_operation_mode(application.SH_CONFIG_ADXL_MODE)
     application.start_sensor()
-    application.enable_csv_logging("adxl.csv") # logging adxl data to csv file
-    application.subscribe_stream()
     time.sleep(10)
-    application.unsubscribe_stream()
-    application.disable_csv_logging()
     application.stop_sensor()
+    application.unsubscribe_stream(stream=application.SH_ADXL_STREAM)
+    application.disable_csv_logging(stream=application.SH_ADXL_STREAM)
 ```
 
 # Permission Issue in Ubuntu
@@ -99,7 +96,7 @@ ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0456", ATTRS{idProduct}=="2c
 - reboot
 
 **All streams packet structure :**
-https://analogdevicesinc.github.io/study-watch-sdk/python/_rst/adi_spo2_watch.core.packets.html#module-adi_spo2_watch.core.packets.stream_data_packets
+https://analogdevicesinc.github.io/spo2-watch-sdk/python/_rst/adi_spo2_watch.core.packets.html#module-adi_spo2_watch.core.packets.stream_data_packets
 
 **Documentation :**
 https://analogdevicesinc.github.io/spo2-watch-sdk/python
