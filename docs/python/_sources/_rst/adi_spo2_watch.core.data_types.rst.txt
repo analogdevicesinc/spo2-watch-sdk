@@ -1,0 +1,69 @@
+adi\_spo2\_watch.core.data\_types package
+=========================================
+
+Submodules
+----------
+
+adi\_spo2\_watch.core.data\_types.array module
+----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.binary module
+-----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.binary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.data\_type module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.data_type
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.decimal module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.decimal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.enums module
+----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.integer module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.integer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.data\_types.string module
+-----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.data_types.string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.core.data_types
+   :members:
+   :undoc-members:
+   :show-inheritance:

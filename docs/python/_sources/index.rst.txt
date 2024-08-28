@@ -1,0 +1,239 @@
+Welcome to ADI SpO2 Watch SDK documentation!
+===============================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+Install the whl file
+--------------------
+
+``pip install adi_spo2_watch``
+
+
+Firmware Setup
+-----------------
+Follow the link_ (pdf) to setup firmware for the study watch.
+
+.. _link: https://github.com/analogdevicesinc/study-watch-sdk/blob/main/firmware/Study_Watch_Firmware_Upgrade.pdf
+
+
+Working with hexadecimal values in python
+------------------------------------------
+
+.. code-block:: python
+
+    >>> val = 13
+    >>> '0x%X' % val # convert int value to hexadecimal
+    # '0xD'
+    >>> hex_val = '0xD'
+    >>> int(hex_val, 16) # convert hexadecimal value to int
+    # 13
+
+
+Basic Example using USB:
+-------------------------
+
+.. code-block:: python
+
+    import time
+    from datetime import datetime
+    from adi_spo2_watch import SDK
+
+    # Callback function to receive adxl data
+    def callback_data(data):
+        sequence_number = data["payload"]["sequence_number"]
+        for stream_data in data["payload"]["stream_data"]:
+            dt_object = datetime.fromtimestamp(stream_data['timestamp'] / 1000)  # convert timestamp from ms to sec.
+            print(f"seq :{sequence_number} timestamp: {dt_object} x,y,z :: ({stream_data['x']}, "
+                    f"{stream_data['y']}, {stream_data['z']})")
+
+
+    if __name__ == "__main__":
+        sdk = SDK("COM4")
+        application = sdk.get_sensorhub_application()
+
+        # Quickstart adxl stream
+        application.set_callback(callback_data, stream=application.SH_ADXL_STREAM)
+        application.enable_csv_logging("adxl.csv", stream=application.SH_ADXL_STREAM) # Logging adxl data to csv file
+        application.subscribe_stream(stream=application.SH_ADXL_STREAM)
+        application.set_operation_mode(application.SH_CONFIG_ADXL_MODE)
+        application.start_sensor()
+        time.sleep(10)
+        application.stop_sensor()
+        application.unsubscribe_stream(stream=application.SH_ADXL_STREAM)
+        application.disable_csv_logging(stream=application.SH_ADXL_STREAM)
+
+
+Example using BLE:
+----------------------
+
+.. code-block:: python
+
+    import time
+    from datetime import datetime
+    from adi_spo2_watch import SDK
+
+    # Callback function to receive adxl data
+    def callback_data(data):
+        sequence_number = data["payload"]["sequence_number"]
+        for stream_data in data["payload"]["stream_data"]:
+            dt_object = datetime.fromtimestamp(stream_data['timestamp'] / 1000)  # Convert timestamp from ms to sec.
+            print(f"seq :{sequence_number} timestamp: {dt_object} x,y,z :: ({stream_data['x']}, "
+                    f"{stream_data['y']}, {stream_data['z']})")
+
+
+    if __name__ == "__main__":
+        sdk = SDK("COM6", mac_address="C5-05-CA-F1-67-D5") # Watch MAC address.
+        application = sdk.get_sensorhub_application()
+
+        # Quickstart adxl stream
+        application.set_callback(callback_data, stream=application.SH_ADXL_STREAM)
+        application.enable_csv_logging("adxl.csv", stream=application.SH_ADXL_STREAM) # Logging adxl data to csv file
+        application.subscribe_stream(stream=application.SH_ADXL_STREAM)
+        application.set_operation_mode(application.SH_CONFIG_ADXL_MODE)
+        application.start_sensor()
+        time.sleep(10)
+        application.stop_sensor()
+        application.unsubscribe_stream(stream=application.SH_ADXL_STREAM)
+        application.disable_csv_logging(stream=application.SH_ADXL_STREAM)
+
+
+
+How to log and download adxl stream data.
+------------------------------------------
+
+.. code-block:: python
+
+    import time
+    from adi_spo2_watch import SDK
+
+    # SDK setup
+    sdk = SDK("COM4")
+    sh_application = sdk.get_sensorhub_application()
+    fs_application = sdk.get_fs_application()
+
+
+    # START LOGGING
+    fs_application.subscribe_stream(fs_application.SH_ADXL_STREAM)
+    fs_application.start_logging()
+    sh_application.set_operation_mode(sh_application.SH_CONFIG_ADXL_MODE)
+    sh_application.start_sensor()
+    print(fs_application.get_status()["payload"]["status"])
+
+    print("logging...")
+    time.sleep(20)
+
+    # STOP LOGGING
+    sh_application.stop_sensor()
+    fs_application.unsubscribe_stream(fs_application.SH_ADXL_STREAM)
+    fs_application.stop_logging()
+    print(fs_application.get_status()["payload"]["status"])
+
+    # List all the files available to download.
+    files = fs_application.ls()
+    for x in files:
+        print(x["payload"]["filename"])
+
+    # Download data from the watch and save it to a file.
+    fs_application.download_file(files[-1]["payload"]["filename"], download_to_file=True, display_progress=True)
+
+    # Convert downloaded file into CSVs
+    sdk.convert_log_to_csv(files[-1]["payload"]["filename"])
+
+
+How to plot adxl data with Matplotlib.
+--------------------------------------------
+
+.. code-block:: python
+
+    from adi_spo2_watch import SDK
+    from matplotlib import pyplot
+    from matplotlib.animation import FuncAnimation
+
+    # Callback to store adxl data in array, we are only storing 200 values.
+    def callback_data(data, adxl_time, adxl_x, adxl_y, adxl_z):
+        if len(adxl_time) > 200:
+            del adxl_time[:5]
+            del adxl_x[:5]
+            del adxl_y[:5]
+            del adxl_z[:5]
+
+        for value in data["payload"]["stream_data"]:
+            adxl_time.append(value["timestamp"])
+            adxl_x.append(value["x"])
+            adxl_y.append(value["y"])
+            adxl_z.append(value["z"])
+
+    x_data, y_data, z_data, time = [], [], [], []
+
+    # Figure and x,y,z line initiated.
+    figure = pyplot.figure()
+    x_line, = pyplot.plot(time, x_data, '-')
+    y_line, = pyplot.plot(time, y_data, '-')
+    z_line, = pyplot.plot(time, z_data, '-')
+
+    # Plot update function
+    def update(frame, plot_time, plot_x_data, plot_y_data, plot_z_data):
+        x_line.set_data(plot_time, plot_x_data)
+        y_line.set_data(plot_time, plot_y_data)
+        z_line.set_data(plot_time, plot_z_data)
+        figure.gca().relim()
+        figure.gca().autoscale_view()
+        return x_line, y_line, z_line
+
+    # SDK setup and sensor start
+    sdk = SDK("COM4")
+    application = sdk.get_sensorhub_application()
+    # Setting callback with some reference list to plot from
+    application.set_callback(callback_data, args=(time, x_data, y_data, z_data), stream=application.SH_ADXL_STREAM)
+
+    # Start sensor
+    application.subscribe_stream(application.SH_ADXL_STREAM)
+    application.set_operation_mode(application.SH_CONFIG_ADXL_MODE)
+    application.start_sensor()
+
+    # Plot started
+    animation = FuncAnimation(figure, update, interval=10, fargs=(time, x_data, y_data, z_data))
+    pyplot.show()
+
+    # Stop sensor
+    application.unsubscribe_stream(application.SH_ADXL_STREAM)
+    application.stop_sensor()
+
+
+.. image:: plot.png
+
+
+For more detail on *FuncAnimation* visit matplotlib animation api_.
+
+.. _api: https://matplotlib.org/api/animation_api.html
+
+Examples
+----------
+https://github.com/analogdevicesinc/spo2-watch-sdk/tree/main/python/samples
+
+
+License
+-----------
+https://github.com/analogdevicesinc/spo2-watch-sdk/blob/main/LICENSE
+
+All API modules:
+----------------
+:ref:`modindex`
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+adi\_spo2\_watch package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   adi_spo2_watch.application
+   adi_spo2_watch.core
+
+Submodules
+----------
+
+adi\_spo2\_watch.sdk module
+---------------------------
+
+.. automodule:: adi_spo2_watch.sdk
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch
+   :members:
+   :undoc-members:
+   :show-inheritance:

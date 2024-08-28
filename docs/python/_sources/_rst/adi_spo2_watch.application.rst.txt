@@ -1,0 +1,158 @@
+adi\_spo2\_watch.application package
+====================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   adi_spo2_watch.application.study_watch
+   adi_spo2_watch.application.vsm_mb_sb
+
+Submodules
+----------
+
+adi\_spo2\_watch.application.ad7156\_application module
+-------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.ad7156_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.adp5360\_application module
+--------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.adp5360_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.bia\_application module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.bia_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.common\_application module
+-------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.common_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.common\_stream module
+--------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.common_stream
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.csv\_logging module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.csv_logging
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.ecg\_application module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.ecg_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.eda\_application module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.eda_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.fs\_application module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.fs_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.low\_touch\_application module
+-----------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.low_touch_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.lt\_mode4\_application module
+----------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.lt_mode4_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.max30208\_application module
+---------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.max30208_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.pm\_application module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.pm_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.sensorhub\_application module
+----------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.sensorhub_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.session\_manager\_application module
+-----------------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.session_manager_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.test\_application module
+-----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.test_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.application.user0\_application module
+------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.user0_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.application
+   :members:
+   :undoc-members:
+   :show-inheritance:

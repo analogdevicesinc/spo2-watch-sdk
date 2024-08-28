@@ -1,0 +1,21 @@
+adi\_spo2\_watch.application.vsm\_mb\_sb package
+================================================
+
+Submodules
+----------
+
+adi\_spo2\_watch.application.vsm\_mb\_sb.pm\_application module
+---------------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.application.vsm_mb_sb.pm_application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.application.vsm_mb_sb
+   :members:
+   :undoc-members:
+   :show-inheritance:

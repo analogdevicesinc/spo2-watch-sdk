@@ -1,0 +1,141 @@
+adi\_spo2\_watch.core.enums package
+===================================
+
+Submodules
+----------
+
+adi\_spo2\_watch.core.enums.ad7156\_enums module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.ad7156_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.adp5360\_enums module
+-------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.adp5360_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.bia\_enums module
+---------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.bia_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.board\_enums module
+-----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.board_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.common\_enums module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.common_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.dcb\_enums module
+---------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.dcb_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.display\_enums module
+-------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.display_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.ecg\_enums module
+---------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.ecg_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.eda\_enums module
+---------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.eda_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.fs\_enums module
+--------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.fs_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.low\_touch\_enum module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.low_touch_enum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.lt\_mode4\_enums module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.lt_mode4_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.pm\_enums module
+--------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.pm_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.sensorhub\_enums module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.sensorhub_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.session\_manager\_enums module
+----------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.session_manager_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.enums.user0\_enums module
+-----------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.enums.user0_enums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.core.enums
+   :members:
+   :undoc-members:
+   :show-inheritance:

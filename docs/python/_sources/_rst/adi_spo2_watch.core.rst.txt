@@ -1,0 +1,47 @@
+adi\_spo2\_watch.core package
+=============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   adi_spo2_watch.core.data_types
+   adi_spo2_watch.core.enums
+   adi_spo2_watch.core.packets
+
+Submodules
+----------
+
+adi\_spo2\_watch.core.ble\_manager module
+-----------------------------------------
+
+.. automodule:: adi_spo2_watch.core.ble_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packet\_manager module
+--------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packet_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.utils module
+----------------------------------
+
+.. automodule:: adi_spo2_watch.core.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.core
+   :members:
+   :undoc-members:
+   :show-inheritance:

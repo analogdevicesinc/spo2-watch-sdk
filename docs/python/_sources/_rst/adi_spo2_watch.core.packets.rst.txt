@@ -1,0 +1,142 @@
+adi\_spo2\_watch.core.packets package
+=====================================
+
+Submodules
+----------
+
+adi\_spo2\_watch.core.packets.ad7156\_packets module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.ad7156_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.adp5360\_packets module
+-----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.adp5360_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.bia\_packets module
+-------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.bia_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.command\_packet module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.command_packet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.common\_packets module
+----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.common_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.display\_packets module
+-----------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.display_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.ecg\_packets module
+-------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.ecg_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.eda\_packets module
+-------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.eda_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.fs\_packets module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.fs_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.low\_touch\_packets module
+--------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.low_touch_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.lt\_mode4\_packets module
+-------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.lt_mode4_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.pm\_packets module
+------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.pm_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.sensorhub\_packets module
+-------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.sensorhub_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.session\_manager\_packets module
+--------------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.session_manager_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+adi\_spo2\_watch.core.packets.stream\_data\_packets module
+----------------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.stream_data_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :exclude-members: ADPDDataPacket, ADXLDataPacket, AGCDataPacket, HRVDataPacket, PPGDataPacket, PedometerDataPacket, SQIDataPacket, SYNCPPGDataPacket, TemperatureDataPacket
+
+adi\_spo2\_watch.core.packets.user0\_packets module
+---------------------------------------------------
+
+.. automodule:: adi_spo2_watch.core.packets.user0_packets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: adi_spo2_watch.core.packets
+   :members:
+   :undoc-members:
+   :show-inheritance:

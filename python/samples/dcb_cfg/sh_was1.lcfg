@@ -1,0 +1,66 @@
+#format
+#0x0  01020304 -> 00-index 01-meas index 02-cfg index 0304-value
+#index
+000A 0004  #algo mode
+000B 0001  #aec enable
+0012 0001  #autopdcurrent
+000D 0708  #targetpdperiod
+000E 0032  #motionthreshold
+000F 009C  #minpdcurrent 
+0010 0138  #initpdcurrent 
+001A 0003  #inittintoption
+001B 0002  #initfsmpoption
+001E 007C  #maxledcurrent
+001C 0000  #maxdacoffset
+0013 0000  #mintintoption 
+0015 0003  #maxtintoption
+0014 0001  #minfsmpoption 
+0016 0004  #maxfsmpoption
+011E 007C  #maxledcurrent
+011C 0000  #maxdacoffset
+0113 0000  #mintintoption
+0115 0003  #maxtintoption
+0114 0001  #minfsmpoption
+0116 0004  #maxfsmpoption
+021E 007C  #maxledcurrent
+021C 0000  #maxdacoffset
+0213 0000  #mintintoption
+0215 0003  #maxtintoption
+0214 0001  #minfsmpoption
+0216 0004  #maxfsmpoption
+031E 007C  #maxledcurrent
+031C 0000  #maxdacoffset
+0313 0000  #mintintoption
+0315 0003  #maxtintoption
+0314 0001  #minfsmpoption
+0316 0004  #maxfsmpoption
+041E 007C  #maxledcurrent
+041C 0000  #maxdacoffset
+0413 0000  #mintintoption
+0415 0003  #maxtintoption
+0414 0001  #minfsmpoption
+0416 0004  #maxfsmpoption
+051E 007C  #maxledcurrent
+051C 0000  #maxdacoffset
+0513 0000  #mintintoption
+0515 0003  #maxtintoption
+0514 0001  #minfsmpoption
+0516 0004  #maxfsmpoption
+061E 007C  #maxledcurrent
+061C 0000  #maxdacoffset
+0613 0000  #mintintoption
+0615 0003  #maxtintoption
+0614 0001  #minfsmpoption
+0616 0004  #maxfsmpoption
+071E 007C  #maxledcurrent
+071C 0000  #maxdacoffset
+0713 0000  #mintintoption
+0715 0003  #maxtintoption
+0714 0001  #minfsmpoption
+0716 0004  #maxfsmpoption
+081E 007C  #maxledcurrent
+081C 0000  #maxdacoffset
+0813 0000  #mintintoption
+0815 0003  #maxtintoption
+0814 0001  #minfsmpoption
+0816 0004  #maxfsmpoption

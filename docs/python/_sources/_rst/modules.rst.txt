@@ -1,0 +1,7 @@
+adi_spo2_watch
+==============
+
+.. toctree::
+   :maxdepth: 4
+
+   adi_spo2_watch
