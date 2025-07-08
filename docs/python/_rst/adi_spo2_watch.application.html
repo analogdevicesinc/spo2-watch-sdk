@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>adi_spo2_watch.application package &#8212; ADI SpO2 Watch SDK 6.6.0 documentation</title>
+    <title>adi_spo2_watch.application package &#8212; ADI SpO2 Watch SDK 6.10.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=def86cc0" />
     
-    <script src="../_static/documentation_options.js?v=ed1b3abe"></script>
+    <script src="../_static/documentation_options.js?v=770b529d"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -25,7 +25,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">ADI SpO2 Watch SDK 6.6.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">ADI SpO2 Watch SDK 6.10.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">adi_spo2_watch.application package</a></li> 
       </ul>
     </div>  
@@ -1867,13 +1867,8 @@ dictionary containing addresses and values. use dcb_flag to see if packet is for
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.csv_logging.CSVLogger.adpd_add_row">
-<span class="sig-name descname"><span class="pre">adpd_add_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_format</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adi_spo2_watch.application.csv_logging.CSVLogger.adpd_add_row" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.csv_logging.CSVLogger.sh_adpd_add_row">
-<span class="sig-name descname"><span class="pre">sh_adpd_add_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_format</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adi_spo2_watch.application.csv_logging.CSVLogger.sh_adpd_add_row" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="adi_spo2_watch.application.csv_logging.CSVLogger.sh_ppg_add_row">
+<span class="sig-name descname"><span class="pre">sh_ppg_add_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_format</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adi_spo2_watch.application.csv_logging.CSVLogger.sh_ppg_add_row" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -3880,6 +3875,11 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_DEBUG_REG_CONF_STREAM">
+<span class="sig-name descname"><span class="pre">SH_DEBUG_REG_CONF_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">58]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_DEBUG_REG_CONF_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_HRM_STREAM">
 <span class="sig-name descname"><span class="pre">SH_HRM_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">49]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_HRM_STREAM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -3925,6 +3925,11 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_PR_STREAM">
+<span class="sig-name descname"><span class="pre">SH_PR_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">56]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_PR_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_REG_CONF_STREAM">
 <span class="sig-name descname"><span class="pre">SH_REG_CONF_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">51]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_REG_CONF_STREAM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -3935,6 +3940,11 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_DEBUG_STREAM">
+<span class="sig-name descname"><span class="pre">SH_SPO2_DEBUG_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">57]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_DEBUG_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_STREAM">
 <span class="sig-name descname"><span class="pre">SH_SPO2_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">48]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_STREAM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -3942,71 +3952,6 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_AD7156">
 <span class="sig-name descname"><span class="pre">STREAM_AD7156</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">21]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_AD7156" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD1">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">17]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD1" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD10">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD10</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">26]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD10" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD11">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD11</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">27]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD11" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD12">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD12</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">28]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD12" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD2">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">18]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD2" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD3">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">19]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD3" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD4">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">20]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD4" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD5">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">21]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD5" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD6">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">22]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD6" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD7">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">23]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD7" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD8">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">24]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD8" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD9">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">25]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD9" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADXL">
-<span class="sig-name descname"><span class="pre">STREAM_ADXL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADXL" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -4025,11 +3970,6 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_DYNAMIC_AGC">
-<span class="sig-name descname"><span class="pre">STREAM_DYNAMIC_AGC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[198,</span> <span class="pre">176]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_DYNAMIC_AGC" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_ECG">
 <span class="sig-name descname"><span class="pre">STREAM_ECG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">1]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ECG" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -4037,91 +3977,6 @@ and returns a response packet as dictionary containing addresses and values.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_EDA">
 <span class="sig-name descname"><span class="pre">STREAM_EDA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_EDA" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_HRV">
-<span class="sig-name descname"><span class="pre">STREAM_HRV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[198,</span> <span class="pre">192]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_HRV" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_PEDOMETER">
-<span class="sig-name descname"><span class="pre">STREAM_PEDOMETER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">4]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_PEDOMETER" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_PPG">
-<span class="sig-name descname"><span class="pre">STREAM_PPG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_PPG" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_SQI">
-<span class="sig-name descname"><span class="pre">STREAM_SQI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">13]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_SQI" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_STATIC_AGC">
-<span class="sig-name descname"><span class="pre">STREAM_STATIC_AGC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[198,</span> <span class="pre">177]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_STATIC_AGC" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE1">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">22]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE1" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE10">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE10</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">31]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE10" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE11">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE11</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">32]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE11" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE12">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE12</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">33]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE12" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE2">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">23]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE2" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE3">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">24]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE3" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE4">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">6]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE4" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE5">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">26]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE5" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE6">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">27]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE6" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE7">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">28]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE7" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE8">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">29]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE8" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE9">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">30]</span></em><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE9" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -4505,27 +4360,6 @@ size    -  V1   - V2      - wt    - V2/V1
 <span class="c1"># 121647E1.LOG FileType.DATA_FILE 477636</span>
 <span class="c1"># 121647ED.LOG FileType.DATA_FILE 140206</span>
 </pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.fs_application.FSApplication.mount">
-<span class="sig-name descname"><span class="pre">mount</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.fs_application.FSApplication.mount" title="Link to this definition">¶</a></dt>
-<dd><p>Mounts the File system.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_fs_application</span><span class="p">()</span>
-<span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">mount</span><span class="p">()</span>
-</span></pre></div>
 </div>
 </dd></dl>
 
@@ -5385,16 +5219,6 @@ registered in the Watch Fw.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADPD4K">
-<span class="sig-name descname"><span class="pre">CHIP_ADPD4K</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADPD4K" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADXL362">
-<span class="sig-name descname"><span class="pre">CHIP_ADXL362</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[1]</span></em><a class="headerlink" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADXL362" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.CHIP_MAX30208">
 <span class="sig-name descname"><span class="pre">CHIP_MAX30208</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[7]</span></em><a class="headerlink" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_MAX30208" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -5413,6 +5237,33 @@ registered in the Watch Fw.</p>
 <dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.CHIP_SH_MAX86178">
 <span class="sig-name descname"><span class="pre">CHIP_SH_MAX86178</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[8]</span></em><a class="headerlink" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_SH_MAX86178" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.custom_popup_display">
+<span class="sig-name descname"><span class="pre">custom_popup_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text_to_display</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.pm_application.PMApplication.custom_popup_display" title="Link to this definition">¶</a></dt>
+<dd><p>”
+Prints input text as popup on the display.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text_to_display</strong> – String that is to be displayed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A response packet as dictionary</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_pm_application</span><span class="p">()</span>
+<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">custom_popup_display</span><span class="p">(</span><span class="s2">&quot;text_to_print&quot;</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;status&quot;</span><span class="p">])</span>
+<span class="c1"># CommonStatus.OK</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.pm_application.PMApplication.delete_display_device_configuration_block">
@@ -6364,6 +6215,11 @@ manufacture_date is current system date manufacture_date This is optional.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_DEBUG_REG_CONF_STREAM">
+<span class="sig-name descname"><span class="pre">SH_DEBUG_REG_CONF_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">58]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_DEBUG_REG_CONF_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_HRM_STREAM">
 <span class="sig-name descname"><span class="pre">SH_HRM_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">49]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_HRM_STREAM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -6409,6 +6265,11 @@ manufacture_date is current system date manufacture_date This is optional.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_PR_STREAM">
+<span class="sig-name descname"><span class="pre">SH_PR_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">56]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_PR_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_REG_CONF_STREAM">
 <span class="sig-name descname"><span class="pre">SH_REG_CONF_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">51]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_REG_CONF_STREAM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -6419,8 +6280,23 @@ manufacture_date is current system date manufacture_date This is optional.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_DEBUG_STREAM">
+<span class="sig-name descname"><span class="pre">SH_SPO2_DEBUG_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">57]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_DEBUG_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_STREAM">
 <span class="sig-name descname"><span class="pre">SH_SPO2_STREAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">48]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_STREAM" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_MLP">
+<span class="sig-name descname"><span class="pre">SPO2_COEFF_MLP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_MLP" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_PTR">
+<span class="sig-name descname"><span class="pre">SPO2_COEFF_PTR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[1]</span></em><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_PTR" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -6650,6 +6526,27 @@ If page size read out is ‘0’ this means that no page size has been configure
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enable_debug_register_stream">
+<span class="sig-name descname"><span class="pre">enable_debug_register_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enable_debug_register_stream" title="Link to this definition">¶</a></dt>
+<dd><p>Enable/disable debug register stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A response packet as dictionary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">enable_debug_register_stream</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enter_sh_boot_loader_mode">
 <span class="sig-name descname"><span class="pre">enter_sh_boot_loader_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enter_sh_boot_loader_mode" title="Link to this definition">¶</a></dt>
 <dd><p>Sets the Sensor Hub device to boot loader mode.</p>
@@ -6732,6 +6629,23 @@ If page size read out is ‘0’ this means that no page size has been configure
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_low_power_mode2_en">
+<span class="sig-name descname"><span class="pre">get_low_power_mode2_en</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_low_power_mode2_en" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch Sensorhub’s low power mode 2 status
+:return: A response packet as dictionary.
+:rtype: Dict</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_low_power_mode2_en</span><span class="p">()</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;enable&quot;</span><span class="p">])</span>
+<span class="c1"># True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_operation_mode">
 <span class="sig-name descname"><span class="pre">get_operation_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_operation_mode" title="Link to this definition">¶</a></dt>
 <dd><p>Fetch sensorhub’s current operation mode</p>
@@ -6775,6 +6689,28 @@ If page size read out is ‘0’ this means that no page size has been configure
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_sensor_status</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">SH_MAX86178_STREAM1</span><span class="p">)</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;num_subscribers&quot;</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;num_start_registered&quot;</span><span class="p">])</span>
 <span class="c1"># 0 0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_aec_version">
+<span class="sig-name descname"><span class="pre">get_sh_aec_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_aec_version" title="Link to this definition">¶</a></dt>
+<dd><p>Command fetch the sensorhub AEC version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A empty dictionary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_sh_aec_version</span><span class="p">()</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;major&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">.</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;minor&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">.</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;patch&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -6875,25 +6811,20 @@ If page size read out is ‘0’ this means that no page size has been configure
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_rr_version">
-<span class="sig-name descname"><span class="pre">get_sh_rr_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_rr_version" title="Link to this definition">¶</a></dt>
-<dd><p>Command fetch the sensorhub Respiration rate version</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A empty dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_spo2_coefficient">
+<span class="sig-name descname"><span class="pre">get_spo2_coefficient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff" title="adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff"><span class="pre">Spo2Coeff</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_spo2_coefficient" title="Link to this definition">¶</a></dt>
+<dd><p>Set Spo2 Coefficients
+:param type: Spo2 Coefficient type, use get_supported_spo2coeffs() to list all supported types.
+:return: A response packet as dictionary.</p>
+<blockquote>
+<div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
 
 <span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
 <span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_sh_rr_version</span><span class="p">()</span>
-</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;major&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">.</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;minor&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">.</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;patch&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
+<span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">get_spo2_coefficient</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">SPO2_COEFF_MLP</span><span class="p">)</span>
+</span></pre></div>
 </div>
+</div></blockquote>
 </dd></dl>
 
 <dl class="py method">
@@ -7007,6 +6938,29 @@ If page size read out is ‘0’ this means that no page size has been configure
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_max86178_devices</span><span class="p">()</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="c1"># [&lt;SensorHubApplication.DEVICE_G_R_IR: [&#39;0x30&#39;]&gt;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_spo2coeffs">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_supported_spo2coeffs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff" title="adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff"><span class="pre">Spo2Coeff</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_spo2coeffs" title="Link to this definition">¶</a></dt>
+<dd><p>List all supported Spo2 Coefficients</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Array of Spo2 coefficient enums.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff" title="adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff">Spo2Coeff</a>]</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_spo2coeffs</span><span class="p">()</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="c1"># [&lt;SensorHubApplication.SPO2_COEFF_MLP: [&#39;0x00&#39;]&gt;, &lt;SensorHubApplication.SPO2_COEFF_PTR: [&#39;0x01&#39;]&gt;]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -7257,6 +7211,27 @@ print(x[“payload”][“result”])</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.motion_activated_wakeup_enable">
+<span class="sig-name descname"><span class="pre">motion_activated_wakeup_enable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.motion_activated_wakeup_enable" title="Link to this definition">¶</a></dt>
+<dd><p>Enable/disable adxl367 based motion activated wakeup</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A response packet as dictionary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">motion_activated_wakeup_enable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.read_adxl367_device_configuration_block">
 <span class="sig-name descname"><span class="pre">read_adxl367_device_configuration_block</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.read_adxl367_device_configuration_block" title="Link to this definition">¶</a></dt>
 <dd><p>Returns the entire adxl367 device configuration block.</p>
@@ -7429,7 +7404,7 @@ print(x[“payload”][“result”])</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_algo_decimation">
-<span class="sig-name descname"><span class="pre">set_algo_decimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">en_reg_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_spo2_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_hr_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_rr_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_algo_decimation" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">set_algo_decimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">en_reg_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_spo2_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_hr_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_rr_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_pr_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">en_ama_decimation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_algo_decimation" title="Link to this definition">¶</a></dt>
 <dd><p>Set the decimation for algorithm data stream
 :return: A response packet as dictionary.
 :rtype: Dict</p>
@@ -7471,6 +7446,24 @@ print(x[“payload”][“result”])</p>
 <span class="n">optional_arg2</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span>
 <span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">set_callback</span><span class="p">(</span><span class="n">callback</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">optional_arg1</span><span class="p">,</span> <span class="n">optional_arg2</span><span class="p">),</span> <span class="n">stream</span><span class="o">=</span><span class="n">application</span><span class="o">.</span><span class="n">PPG</span><span class="p">)</span>
 </span></pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_low_power_mode2_en">
+<span class="sig-name descname"><span class="pre">set_low_power_mode2_en</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_low_power_mode2_en" title="Link to this definition">¶</a></dt>
+<dd><p>Enable/Disable sensorhub’s low power mode 2
+:param enable : True -&gt; low power mode 2, False -&gt; normal mode
+:return: A response packet as dictionary.
+:rtype: Dict</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">set_low_power_mode2_en</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;status&quot;</span><span class="p">])</span>
+<span class="c1"># CommonStatus.OK</span>
+</pre></div>
 </div>
 </dd></dl>
 
@@ -7602,6 +7595,31 @@ If page size read out is ‘0’ this means that no page size has been configure
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">set_sh_page_num</span><span class="p">(</span><span class="mi">8196</span><span class="p">)</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_spo2_coefficient">
+<span class="sig-name descname"><span class="pre">set_spo2_coefficient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff" title="adi_spo2_watch.core.enums.sensorhub_enums.Spo2Coeff"><span class="pre">Spo2Coeff</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coeff_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coeff_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coeff_c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_spo2_coefficient" title="Link to this definition">¶</a></dt>
+<dd><p>Set Spo2 Coefficients
+:param type: Spo2 Coefficient type, use get_supported_spo2coeffs() to list all supported types.
+:param coeff_a: Coefficient A
+:param coeff_b: Coefficient B
+:param coeff_c: Coefficient C</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A response packet as dictionary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
+
+<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_sensorhub_application</span><span class="p">()</span>
+<span class="hll"><span class="n">application</span><span class="o">.</span><span class="n">set_spo2_coefficient</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">SPO2_COEFF_MLP</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></pre></div>
 </div>
 </dd></dl>
 
@@ -8347,31 +8365,6 @@ dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.LED_BLUE">
-<span class="sig-name descname"><span class="pre">LED_BLUE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[4]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.LED_BLUE" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.LED_GREEN">
-<span class="sig-name descname"><span class="pre">LED_GREEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[1]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.LED_GREEN" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.LED_IR">
-<span class="sig-name descname"><span class="pre">LED_IR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[3]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.LED_IR" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.LED_MWL">
-<span class="sig-name descname"><span class="pre">LED_MWL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.LED_MWL" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.LED_RED">
-<span class="sig-name descname"><span class="pre">LED_RED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.LED_RED" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.POWER_MODE_ACTIVE">
 <span class="sig-name descname"><span class="pre">POWER_MODE_ACTIVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.POWER_MODE_ACTIVE" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -8392,71 +8385,6 @@ dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD1">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">17]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD1" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD10">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD10</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">26]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD10" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD11">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD11</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">27]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD11" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD12">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD12</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">28]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD12" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD2">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">18]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD2" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD3">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">19]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD3" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD4">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">20]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD4" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD5">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">21]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD5" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD6">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">22]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD6" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD7">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">23]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD7" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD8">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">24]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD8" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD9">
-<span class="sig-name descname"><span class="pre">STREAM_ADPD9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">25]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD9" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_ADXL">
-<span class="sig-name descname"><span class="pre">STREAM_ADXL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[194,</span> <span class="pre">2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADXL" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_BCM">
 <span class="sig-name descname"><span class="pre">STREAM_BCM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">7]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_BCM" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -8472,86 +8400,6 @@ dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_PEDOMETER">
-<span class="sig-name descname"><span class="pre">STREAM_PEDOMETER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">4]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_PEDOMETER" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_PPG">
-<span class="sig-name descname"><span class="pre">STREAM_PPG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_PPG" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_SQI">
-<span class="sig-name descname"><span class="pre">STREAM_SQI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">13]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_SQI" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_SYNC_PPG">
-<span class="sig-name descname"><span class="pre">STREAM_SYNC_PPG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">5]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_SYNC_PPG" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE1">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">22]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE1" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE10">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE10</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">31]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE10" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE11">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE11</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">32]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE11" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE12">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE12</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">33]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE12" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE2">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">23]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE2" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE3">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">24]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE3" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE4">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[196,</span> <span class="pre">6]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE4" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE5">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">26]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE5" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE6">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">27]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE6" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE7">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">28]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE7" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE8">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">29]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE8" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE9">
-<span class="sig-name descname"><span class="pre">STREAM_TEMPERATURE9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[200,</span> <span class="pre">30]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE9" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.SWITCH_AD5940">
 <span class="sig-name descname"><span class="pre">SWITCH_AD5940</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[1]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.SWITCH_AD5940" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -8562,35 +8410,9 @@ dictionary containing addresses and values.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.SWITCH_ADPD4000">
-<span class="sig-name descname"><span class="pre">SWITCH_ADPD4000</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[2]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.SWITCH_ADPD4000" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.WHITE">
 <span class="sig-name descname"><span class="pre">WHITE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0]</span></em><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.WHITE" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.adxl_self_test">
-<span class="sig-name descname"><span class="pre">adxl_self_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.adxl_self_test" title="Link to this definition">¶</a></dt>
-<dd><p>ADXL self test.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">adxl_self_test</span><span class="p">()</span>
-</span></pre></div>
-</div>
-</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.disable_back_light">
@@ -8659,7 +8481,7 @@ dictionary containing addresses and values.</p>
 <span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_switches</span><span class="p">()</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [&lt;ElectrodeSwitch.AD8233_SWITCH: [&#39;0x0&#39;]&gt;, ... , &lt;ElectrodeSwitch.ADPD4000_SWITCH: [&#39;0x2&#39;]&gt;]</span>
+<span class="c1"># [&lt;ElectrodeSwitch.AD8233_SWITCH: [&#39;0x0&#39;]&gt;, ...]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">disable_electrode_switch</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">SWITCH_AD5940</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;switch_name&quot;</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;enabled&quot;</span><span class="p">])</span>
 <span class="c1"># ElectrodeSwitch.AD5940 False</span>
@@ -8788,7 +8610,7 @@ Enables the back light of the watch.</p>
 <span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_switches</span><span class="p">()</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [&lt;ElectrodeSwitch.AD8233_SWITCH: [&#39;0x0&#39;]&gt;, ... , &lt;ElectrodeSwitch.ADPD4000_SWITCH: [&#39;0x2&#39;]&gt;]</span>
+<span class="c1"># [&lt;ElectrodeSwitch.AD8233_SWITCH: [&#39;0x0&#39;]&gt;, ... ]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">enable_electrode_switch</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">SWITCH_AD5940</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;switch_name&quot;</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;enabled&quot;</span><span class="p">])</span>
 <span class="c1"># ElectrodeSwitch.AD5940 True</span>
@@ -9000,45 +8822,6 @@ Test Case-20: TOC corruption</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_agc_info">
-<span class="sig-name descname"><span class="pre">get_agc_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">led_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ADPDLed</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_agc_info" title="Link to this definition">¶</a></dt>
-<dd><p>Returns AGC info of specified led index.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>led_index</strong> (<em>ADPDLed</em>) – led_index to obtain info, use get_supported_led_ids() to list all supported led ID.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_led_ids</span><span class="p">()</span>
-</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [&lt;ADPDLed.LED_GREEN: [&#39;0x0&#39;]&gt;, &lt;ADPDLed.LED_RED: [&#39;0x1&#39;]&gt;, ... , &lt;ADPDLed.LED_BLUE: [&#39;0x3&#39;]&gt;]</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_agc_info</span><span class="p">(</span><span class="n">application</span><span class="o">.</span><span class="n">LED_GREEN</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;led_index&quot;</span><span class="p">])</span>
-<span class="c1"># ADPDLed.LED_GREEN</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;ch1&quot;</span><span class="p">])</span>
-<span class="c1"># [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;ch2&quot;</span><span class="p">])</span>
-<span class="c1"># [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;dc0_led_current&quot;</span><span class="p">])</span>
-<span class="c1"># 0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;tia_ch1&quot;</span><span class="p">])</span>
-<span class="c1"># 0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;tia_ch2&quot;</span><span class="p">])</span>
-<span class="c1"># 0</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_apps_health_status">
 <span class="sig-name descname"><span class="pre">get_apps_health_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_apps_health_status" title="Link to this definition">¶</a></dt>
 <dd><p>Returns ISR count of ad5940, adpd, adxl.</p>
@@ -9150,29 +8933,6 @@ Test Case-20: TOC corruption</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_ppg_states">
-<span class="sig-name descname"><span class="pre">get_ppg_states</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_ppg_states" title="Link to this definition">¶</a></dt>
-<dd><p>Get PPG states.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_states</span><span class="p">()</span>
-</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;states&quot;</span><span class="p">])</span>
-<span class="c1"># [0,0,0, ... ,0,0]</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_stream_debug_info">
 <span class="sig-name descname"><span class="pre">get_stream_debug_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.common_enums.Stream" title="adi_spo2_watch.core.enums.common_enums.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_stream_debug_info" title="Link to this definition">¶</a></dt>
 <dd><p>Returns specified stream debug info of FS.</p>
@@ -9248,29 +9008,6 @@ Test Case-20: TOC corruption</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_supported_led_ids">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_supported_led_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ADPDLed</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_led_ids" title="Link to this definition">¶</a></dt>
-<dd><p>List all supported led IDs for ADPD.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Array of Led ID enums.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>List</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_led_ids</span><span class="p">()</span>
-</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [&lt;ADPDLed.LED_MWL: [&#39;0x0&#39;]&gt;, &lt;ADPDLed.LED_GREEN: [&#39;0x1&#39;]&gt;, ... , &lt;ADPDLed.LED_BLUE: [&#39;0x4&#39;]&gt;]</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.get_supported_power_states">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_supported_power_states</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="adi_spo2_watch.core.enums.html#adi_spo2_watch.core.enums.pm_enums.PowerMode" title="adi_spo2_watch.core.enums.pm_enums.PowerMode"><span class="pre">PowerMode</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_power_states" title="Link to this definition">¶</a></dt>
 <dd><p>List all supported power states for PM.</p>
@@ -9334,7 +9071,7 @@ Test Case-20: TOC corruption</p>
 <span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
 <span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">get_supported_switches</span><span class="p">()</span>
 </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [&lt;ElectrodeSwitch.SWITCH_AD8233: [&#39;0x0&#39;]&gt;, ... , &lt;ElectrodeSwitch.SWITCH_ADPD4000: [&#39;0x2&#39;]&gt;]</span>
+<span class="c1"># [&lt;ElectrodeSwitch.SWITCH_AD8233: [&#39;0x0&#39;]&gt;, ... ]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -9564,69 +9301,6 @@ Test Case-20: TOC corruption</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">][</span><span class="s2">&quot;power_state&quot;</span><span class="p">])</span>
 <span class="c1"># PowerState.ACTIVE_MODE</span>
 </pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.test_command1">
-<span class="sig-name descname"><span class="pre">test_command1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.test_command1" title="Link to this definition">¶</a></dt>
-<dd><p>ADPD test command.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">test_command1</span><span class="p">()</span>
-</span></pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.test_command2">
-<span class="sig-name descname"><span class="pre">test_command2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.test_command2" title="Link to this definition">¶</a></dt>
-<dd><p>ADPD test command.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">test_command2</span><span class="p">()</span>
-</span></pre></div>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adi_spo2_watch.application.test_application.TestApplication.test_command3">
-<span class="sig-name descname"><span class="pre">test_command3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span></span></span><a class="headerlink" href="#adi_spo2_watch.application.test_application.TestApplication.test_command3" title="Link to this definition">¶</a></dt>
-<dd><p>ADPD test command.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A response packet as dictionary.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>Dict</p>
-</dd>
-</dl>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">adi_spo2_watch</span> <span class="kn">import</span> <span class="n">SDK</span>
-
-<span class="n">sdk</span> <span class="o">=</span> <span class="n">SDK</span><span class="p">(</span><span class="s2">&quot;COM4&quot;</span><span class="p">)</span>
-<span class="n">application</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">get_test_application</span><span class="p">()</span>
-<span class="hll"><span class="n">x</span> <span class="o">=</span> <span class="n">application</span><span class="o">.</span><span class="n">test_command3</span><span class="p">()</span>
-</span></pre></div>
 </div>
 </dd></dl>
 
@@ -10322,8 +9996,7 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#module-adi_spo2_watch.application.csv_logging">adi_spo2_watch.application.csv_logging module</a><ul>
 <li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger"><code class="docutils literal notranslate"><span class="pre">CSVLogger</span></code></a><ul>
 <li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.add_row"><code class="docutils literal notranslate"><span class="pre">CSVLogger.add_row()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.adpd_add_row"><code class="docutils literal notranslate"><span class="pre">CSVLogger.adpd_add_row()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.sh_adpd_add_row"><code class="docutils literal notranslate"><span class="pre">CSVLogger.sh_adpd_add_row()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.sh_ppg_add_row"><code class="docutils literal notranslate"><span class="pre">CSVLogger.sh_ppg_add_row()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.start_logging"><code class="docutils literal notranslate"><span class="pre">CSVLogger.start_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.stop_logging"><code class="docutils literal notranslate"><span class="pre">CSVLogger.stop_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.csv_logging.CSVLogger.write_row"><code class="docutils literal notranslate"><span class="pre">CSVLogger.write_row()</span></code></a></li>
@@ -10448,6 +10121,7 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SEQUENCE_CHECK_EVENT"><code class="docutils literal notranslate"><span class="pre">FSApplication.SEQUENCE_CHECK_EVENT</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_ADXL_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_ADXL_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_AMA_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_AMA_STREAM</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_DEBUG_REG_CONF_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_DEBUG_REG_CONF_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_HRM_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_HRM_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_MAX86178_BIOZ_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_MAX86178_BIOZ_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_MAX86178_ECG_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_MAX86178_ECG_STREAM</span></code></a></li>
@@ -10457,46 +10131,17 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_MAX86178_STREAM4"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_MAX86178_STREAM4</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_MAX86178_STREAM5"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_MAX86178_STREAM5</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_MAX86178_STREAM6"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_MAX86178_STREAM6</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_PR_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_PR_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_REG_CONF_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_REG_CONF_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_RR_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_RR_STREAM</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_DEBUG_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_SPO2_DEBUG_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.SH_SPO2_STREAM"><code class="docutils literal notranslate"><span class="pre">FSApplication.SH_SPO2_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_AD7156"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_AD7156</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD1"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD1</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD10"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD10</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD11"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD11</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD12"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD12</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD2"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD2</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD3"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD3</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD4"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD4</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD5"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD5</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD6"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD6</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD7"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD7</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD8"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD8</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADPD9"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADPD9</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ADXL"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ADXL</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_BATTERY"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_BATTERY</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_BCM"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_BCM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_BIA"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_BIA</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_DYNAMIC_AGC"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_DYNAMIC_AGC</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_ECG"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_ECG</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_EDA"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_EDA</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_HRV"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_HRV</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_PEDOMETER"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_PEDOMETER</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_PPG"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_PPG</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_SQI"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_SQI</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_STATIC_AGC"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_STATIC_AGC</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE1"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE1</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE10"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE10</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE11"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE11</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE12"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE12</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE2"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE2</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE3"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE3</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE4"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE4</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE5"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE5</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE6"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE6</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE7"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE7</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE8"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE8</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.STREAM_TEMPERATURE9"><code class="docutils literal notranslate"><span class="pre">FSApplication.STREAM_TEMPERATURE9</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.abort_logging"><code class="docutils literal notranslate"><span class="pre">FSApplication.abort_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.append_file"><code class="docutils literal notranslate"><span class="pre">FSApplication.append_file()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.delete_config_file"><code class="docutils literal notranslate"><span class="pre">FSApplication.delete_config_file()</span></code></a></li>
@@ -10512,7 +10157,6 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.get_supported_streams"><code class="docutils literal notranslate"><span class="pre">FSApplication.get_supported_streams()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.inject_key_value_pair"><code class="docutils literal notranslate"><span class="pre">FSApplication.inject_key_value_pair()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.ls"><code class="docutils literal notranslate"><span class="pre">FSApplication.ls()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.mount"><code class="docutils literal notranslate"><span class="pre">FSApplication.mount()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.start_logging"><code class="docutils literal notranslate"><span class="pre">FSApplication.start_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.stop_logging"><code class="docutils literal notranslate"><span class="pre">FSApplication.stop_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.fs_application.FSApplication.stream_file"><code class="docutils literal notranslate"><span class="pre">FSApplication.stream_file()</span></code></a></li>
@@ -10583,12 +10227,11 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_AD5940"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_AD5940</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_AD7156"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_AD7156</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADP5360"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_ADP5360</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADPD4K"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_ADPD4K</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_ADXL362"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_ADXL362</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_MAX30208"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_MAX30208</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_NAND_FLASH"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_NAND_FLASH</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_SH_ADXL367"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_SH_ADXL367</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.CHIP_SH_MAX86178"><code class="docutils literal notranslate"><span class="pre">PMApplication.CHIP_SH_MAX86178</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.custom_popup_display"><code class="docutils literal notranslate"><span class="pre">PMApplication.custom_popup_display()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.delete_display_device_configuration_block"><code class="docutils literal notranslate"><span class="pre">PMApplication.delete_display_device_configuration_block()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.device_configuration_block_status"><code class="docutils literal notranslate"><span class="pre">PMApplication.device_configuration_block_status()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.pm_application.PMApplication.disable_battery_charging"><code class="docutils literal notranslate"><span class="pre">PMApplication.disable_battery_charging()</span></code></a></li>
@@ -10652,6 +10295,7 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_CONFIG_ECG_MODE"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_CONFIG_ECG_MODE</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_CONFIG_PPG_MODE"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_CONFIG_PPG_MODE</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_CONFIG_RAW_MODE"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_CONFIG_RAW_MODE</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_DEBUG_REG_CONF_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_DEBUG_REG_CONF_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_HRM_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_HRM_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_MAX86178_BIOZ_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_MAX86178_BIOZ_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_MAX86178_ECG_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_MAX86178_ECG_STREAM</span></code></a></li>
@@ -10661,9 +10305,13 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_MAX86178_STREAM4"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_MAX86178_STREAM4</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_MAX86178_STREAM5"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_MAX86178_STREAM5</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_MAX86178_STREAM6"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_MAX86178_STREAM6</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_PR_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_PR_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_REG_CONF_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_REG_CONF_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_RR_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_RR_STREAM</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_DEBUG_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_SPO2_DEBUG_STREAM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SH_SPO2_STREAM"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SH_SPO2_STREAM</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_MLP"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SPO2_COEFF_MLP</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.SPO2_COEFF_PTR"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.SPO2_COEFF_PTR</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.adxl367_read_register"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.adxl367_read_register()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.adxl367_self_test"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.adxl367_self_test()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.adxl367_write_register"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.adxl367_write_register()</span></code></a></li>
@@ -10672,22 +10320,26 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.delete_max86178_device_configuration_block"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.delete_max86178_device_configuration_block()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.disable_csv_logging"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.disable_csv_logging()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enable_csv_logging"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.enable_csv_logging()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enable_debug_register_stream"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.enable_debug_register_stream()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.enter_sh_boot_loader_mode"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.enter_sh_boot_loader_mode()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_adxl367_calibration_config"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_adxl367_calibration_config()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_adxl367_calibration_en"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_adxl367_calibration_en()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_algo_decimation"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_algo_decimation()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_low_power_mode2_en"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_low_power_mode2_en()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_operation_mode"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_operation_mode()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sensor_status"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sensor_status()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_aec_version"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_aec_version()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_algo_version"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_algo_version()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_firmware_version"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_firmware_version()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_frequency"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_frequency()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_page_size"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_page_size()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_sh_rr_version"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_sh_rr_version()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_spo2_coefficient"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_spo2_coefficient()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_adxl367_devices"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_adxl367_devices()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_adxl367_meas_range"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_adxl367_meas_range()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_config_ids"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_config_ids()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_devices"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_devices()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_max86178_devices"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_max86178_devices()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_spo2coeffs"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_spo2coeffs()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_streams"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_streams()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.get_supported_was_devices"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.get_supported_was_devices()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.load_adxl367_configuration"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.load_adxl367_configuration()</span></code></a></li>
@@ -10697,6 +10349,7 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.max86178_enable_ecg_packetization"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.max86178_enable_ecg_packetization()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.max86178_read_register"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.max86178_read_register()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.max86178_write_register"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.max86178_write_register()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.motion_activated_wakeup_enable"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.motion_activated_wakeup_enable()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.read_adxl367_device_configuration_block"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.read_adxl367_device_configuration_block()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.read_library_configuration"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.read_library_configuration()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.read_max86178_device_configuration_block"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.read_max86178_device_configuration_block()</span></code></a></li>
@@ -10706,11 +10359,13 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_adxl367_calibration_en"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_adxl367_calibration_en()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_algo_decimation"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_algo_decimation()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_callback"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_callback()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_low_power_mode2_en"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_low_power_mode2_en()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_operation_mode"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_operation_mode()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_sh_authorization"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_sh_authorization()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_sh_frequency"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_sh_frequency()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_sh_iv"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_sh_iv()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_sh_page_num"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_sh_page_num()</span></code></a></li>
+<li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.set_spo2_coefficient"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.set_spo2_coefficient()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.sh_erase_flash"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.sh_erase_flash()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.sh_exit_bootloader"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.sh_exit_bootloader()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.sensorhub_application.SensorHubApplication.sh_hard_reset"><code class="docutils literal notranslate"><span class="pre">SensorHubApplication.sh_hard_reset()</span></code></a></li>
@@ -10753,52 +10408,16 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LDO_EPHYZ"><code class="docutils literal notranslate"><span class="pre">TestApplication.LDO_EPHYZ</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LDO_FS"><code class="docutils literal notranslate"><span class="pre">TestApplication.LDO_FS</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LDO_OPTICAL"><code class="docutils literal notranslate"><span class="pre">TestApplication.LDO_OPTICAL</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LED_BLUE"><code class="docutils literal notranslate"><span class="pre">TestApplication.LED_BLUE</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LED_GREEN"><code class="docutils literal notranslate"><span class="pre">TestApplication.LED_GREEN</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LED_IR"><code class="docutils literal notranslate"><span class="pre">TestApplication.LED_IR</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LED_MWL"><code class="docutils literal notranslate"><span class="pre">TestApplication.LED_MWL</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.LED_RED"><code class="docutils literal notranslate"><span class="pre">TestApplication.LED_RED</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.POWER_MODE_ACTIVE"><code class="docutils literal notranslate"><span class="pre">TestApplication.POWER_MODE_ACTIVE</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.POWER_MODE_HIBERNATE"><code class="docutils literal notranslate"><span class="pre">TestApplication.POWER_MODE_HIBERNATE</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.POWER_MODE_SHUTDOWN"><code class="docutils literal notranslate"><span class="pre">TestApplication.POWER_MODE_SHUTDOWN</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.RED"><code class="docutils literal notranslate"><span class="pre">TestApplication.RED</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD1"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD1</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD10"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD10</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD11"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD11</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD12"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD12</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD2"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD2</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD3"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD3</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD4"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD4</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD5"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD5</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD6"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD6</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD7"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD7</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD8"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD8</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADPD9"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADPD9</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ADXL"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ADXL</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_BCM"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_BCM</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_ECG"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_ECG</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_EDA"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_EDA</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_PEDOMETER"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_PEDOMETER</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_PPG"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_PPG</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_SQI"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_SQI</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_SYNC_PPG"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_SYNC_PPG</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE1"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE1</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE10"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE10</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE11"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE11</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE12"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE12</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE2"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE2</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE3"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE3</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE4"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE4</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE5"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE5</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE6"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE6</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE7"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE7</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE8"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE8</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.STREAM_TEMPERATURE9"><code class="docutils literal notranslate"><span class="pre">TestApplication.STREAM_TEMPERATURE9</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.SWITCH_AD5940"><code class="docutils literal notranslate"><span class="pre">TestApplication.SWITCH_AD5940</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.SWITCH_AD8233"><code class="docutils literal notranslate"><span class="pre">TestApplication.SWITCH_AD8233</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.SWITCH_ADPD4000"><code class="docutils literal notranslate"><span class="pre">TestApplication.SWITCH_ADPD4000</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.WHITE"><code class="docutils literal notranslate"><span class="pre">TestApplication.WHITE</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.adxl_self_test"><code class="docutils literal notranslate"><span class="pre">TestApplication.adxl_self_test()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.disable_back_light"><code class="docutils literal notranslate"><span class="pre">TestApplication.disable_back_light()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.disable_cap_sense_test"><code class="docutils literal notranslate"><span class="pre">TestApplication.disable_cap_sense_test()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.disable_electrode_switch"><code class="docutils literal notranslate"><span class="pre">TestApplication.disable_electrode_switch()</span></code></a></li>
@@ -10815,17 +10434,14 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.fs_mark_block_as_bad"><code class="docutils literal notranslate"><span class="pre">TestApplication.fs_mark_block_as_bad()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.fs_mark_block_as_good"><code class="docutils literal notranslate"><span class="pre">TestApplication.fs_mark_block_as_good()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.fs_test"><code class="docutils literal notranslate"><span class="pre">TestApplication.fs_test()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_agc_info"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_agc_info()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_apps_health_status"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_apps_health_status()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_bad_blocks"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_bad_blocks()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_debug_info"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_debug_info()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_fds_status"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_fds_status()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_file_info"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_file_info()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_ppg_states"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_ppg_states()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_stream_debug_info"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_stream_debug_info()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_display_colors"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_display_colors()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_ldo"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_ldo()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_led_ids"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_led_ids()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_power_states"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_power_states()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_streams"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_streams()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.get_supported_switches"><code class="docutils literal notranslate"><span class="pre">TestApplication.get_supported_switches()</span></code></a></li>
@@ -10838,9 +10454,6 @@ dictionary containing addresses and values.</p>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.set_display_color"><code class="docutils literal notranslate"><span class="pre">TestApplication.set_display_color()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.set_key_press_callback"><code class="docutils literal notranslate"><span class="pre">TestApplication.set_key_press_callback()</span></code></a></li>
 <li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.set_power_mode"><code class="docutils literal notranslate"><span class="pre">TestApplication.set_power_mode()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.test_command1"><code class="docutils literal notranslate"><span class="pre">TestApplication.test_command1()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.test_command2"><code class="docutils literal notranslate"><span class="pre">TestApplication.test_command2()</span></code></a></li>
-<li><a class="reference internal" href="#adi_spo2_watch.application.test_application.TestApplication.test_command3"><code class="docutils literal notranslate"><span class="pre">TestApplication.test_command3()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -10916,12 +10529,12 @@ dictionary containing addresses and values.</p>
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">ADI SpO2 Watch SDK 6.6.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">ADI SpO2 Watch SDK 6.10.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">adi_spo2_watch.application package</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2020, ADI.
+    &#169; Copyright 2025, ADI.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
     </div>
   </body>
