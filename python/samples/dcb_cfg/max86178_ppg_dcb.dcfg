@@ -1,0 +1,43 @@
+#max86178_dcfg
+#PLL
+18 01
+19 FF
+1D 20
+
+#PPG Config
+20 07
+24 55
+
+#PPG Frame clock
+28 01
+29 48
+
+#MEAS1 settings
+30 00
+31 1A
+32 23
+33 00
+34 47
+35 0E
+36 0F
+37 1F
+
+#MEAS2 settings
+38 01
+39 1A
+3A 23
+3B 00
+3C 47
+3D 0E
+3E 0F
+3F 1F
+
+#MEAS3 settings
+40 02
+41 1A
+42 23
+43 00
+44 47
+45 0E
+46 0F
+47 1F

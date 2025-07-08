@@ -1,0 +1,4 @@
+# Display DCB
+# Used for setting Engineer/Patient mode
+# 00 00 # Engineer mode 
+00 01 # Patient mode

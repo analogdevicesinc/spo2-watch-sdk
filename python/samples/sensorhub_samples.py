@@ -1,36 +1,39 @@
 # ******************************************************************************
-# Copyright (c) 2024 Analog Devices, Inc.
-# All rights reserved.
-# 
-# Redistribution and use in source and binary forms, with or without modification,
-# are permitted provided that the following conditions are met:
-# 
-#   * Redistributions of source code must retain the above copyright notice, this
-#     list of conditions and the following disclaimer.
-# 
-#   * Redistributions in binary form must reproduce the above copyright notice,
-#     this list of conditions and the following disclaimer in the documentation
-#     and/or other materials provided with the distribution.
-# 
-#   * Neither the name of Analog Devices, Inc. nor the names of its contributors may
-#     be used to endorse or promote products derived from this software without
-#     specific prior written permission.
-# 
-# 
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
-# OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
-# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-# 
-# This software is subject to the above license but may also include
-# additional software components that are identified in the NOTICE file,
-# together with their associated licenses.
+# Copyright (c) 2025 Analog Devices, Inc.  All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# - Redistributions of source code must retain the above copyright notice, this
+#  list of conditions and the following disclaimer.
+# - Redistributions in binary form must reproduce the above copyright notice,
+#  this list of conditions and the following disclaimer in the documentation
+#  and/or other materials provided with the distribution.
+# - Modified versions of the software must be conspicuously marked as such.
+# - This software is licensed solely and exclusively for use with
+#  processors/products manufactured by or for Analog Devices, Inc.
+# - This software may not be combined or merged with other code in any manner
+#  that would cause the software to become subject to terms and conditions
+#  which differ from those listed here.
+# - Neither the name of Analog Devices, Inc. nor the names of its contributors
+#  may be used to endorse or promote products derived from this software
+#  without specific prior written permission.
+# - The use of this software may or may not infringe the patent rights of one
+#  or more patent holders.  This license does not release you from the
+#  requirement that you obtain separate licenses from these patent holders to
+#  use this software.
+#
+# THIS SOFTWARE IS PROVIDED BY ANALOG DEVICES, INC. AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+# NONINFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL ANALOG DEVICES, INC. OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, DAMAGES ARISING OUT OF
+# CLAIMS OF INTELLECTUAL PROPERTY RIGHTS INFRINGEMENT; PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 # ******************************************************************************
 
 import time
@@ -162,9 +165,11 @@ if __name__ == "__main__":
     print(packet)
     packet = sensorhub_application.load_max86178_configuration(sensorhub_application.DEVICE_ECG)
     print(packet)
+
     adxl367_device_ids = sensorhub_application.get_supported_adxl367_devices()
     packet = sensorhub_application.load_adxl367_configuration(sensorhub_application.DEVICE_367)
     print(packet)
+
     was_device_ids = sensorhub_application.get_supported_was_devices()
     packet = sensorhub_application.load_was_configuration(sensorhub_application.DEVICE_WAS)
     print(packet)
@@ -198,7 +203,7 @@ if __name__ == "__main__":
     packet = sensorhub_application.adxl367_self_test(sensorhub_application.SH_ADXL367_MEAS_RANGE_8G)
     print(packet)
 
-    #Decimaton Test for HR
+    # Enable decimation for HRM
     packet = sensorhub_application.set_algo_decimation(en_reg_decimation=False, en_spo2_decimation=False, en_hr_decimation=True, en_rr_decimation=False)
     packet = sensorhub_application.get_algo_decimation()
     print(packet)
@@ -210,11 +215,36 @@ if __name__ == "__main__":
 
     time.sleep(10)
 
-    # quickstop SensorHub HRM
     sensorhub_application.stop_sensor()
     sensorhub_application.unsubscribe_stream(sensorhub_application.SH_HRM_STREAM)
     sensorhub_application.disable_csv_logging(stream=sensorhub_application.SH_HRM_STREAM)
     packet = sensorhub_application.set_algo_decimation(en_reg_decimation=False, en_spo2_decimation=False, en_hr_decimation=False, en_rr_decimation=False)
     packet = sensorhub_application.get_algo_decimation()
     print(packet)
+
+    # WAS LCFG
+    # get supported algorithms
+    packet = sensorhub_application.get_supported_was_devices()
+    print(packet)
+
+    # load default WAS config
+    packet = sensorhub_application.load_was_configuration(sensorhub_application.DEVICE_WAS)
+    print(packet)
+
+    # read WAS config
+    packet = sensorhub_application.read_library_configuration([0x0A])
+    print(packet)
+
+    # write WAS config
+    packet = sensorhub_application.write_library_configuration([[0x0A, 0]])
+    print(packet)
+
+    # load WAS config from a file
+    packet = sensorhub_application.write_was_library_configuration_block_from_file('dcb_cfg/sh_was1.lcfg')
+    print(packet)
+
+    # read WAS config
+    packet = sensorhub_application.read_was_library_configuration_block()
+    print(packet)
+
 
